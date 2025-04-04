@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: url(./images/Fundo1.png);
+    background-size: cover;
+    height: 26rem;
+    color: #eeeeee;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+}
+
+nav{
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 61rem;
+    border-radius: 15px;
+    padding-block: .5rem;
+}
+
+nav img{
+    height: 3rem;
+    filter: invert(1);
+}
+
+nav a{
+    color: #FFFAFA;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: solid 2px transparent;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+nav a:hover{
+    border: solid 2px #FFFAFA;
+}
+
+h1{
+    color: #FFFAFA;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    width: 60rem;
+}
+
+header h3{
+    width: 60rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.autor{
+    background: #FFFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 4rem;
+    color: #1F1E1E;
+}
+
+h2{
+    font-family: "Raleway" ,sans-serif;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.autor section{
+    display: flex;
+    width: 62rem;
+    gap: 5rem;
+}
+
+.autor section div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.autor section p{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    width: 30rem;
+}
+
+.autor section img{
+    width: 23rem;
+}
+
+.formula{
+    background: #1E1E1E;
+    color: #FFFAFA;
+    padding-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.formula h4{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .75rem;
+}
+
+.formula p{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.formula section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.formula .items{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.formula .items img{
+    filter: invert(1);
+    width: 7rem;
+}
+
+.exemplos{
+    padding-block: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background: #FFFAFA;
+    color: #1F1E1E;
+}
+
+.exemplos h2{
+    text-align: left;
+}
+
+.exemplos section{
+    width: 36rem;
+}
+
+.exemplos h4{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.exemplos p{
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.exemplos span{
+    font-weight: 500;
+}
+
+.exemplos img{
+    border-radius: 7px;
+}
+
+.exemplos .caixas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding-top: 2rem;
+}
+
+.exemplo:nth-child(3) {
+    grid-column: span 2;
+}
+
+.exemplos .exemplo{
+    padding: 1.25rem;
+    border: #1E1E1E solid 1px;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.exemplos .exemplo:hover{
+    transform: scale(1.125);
+    cursor: pointer;
+}
+
+.exemplos h4{
+    margin-bottom: .5rem;
+}
