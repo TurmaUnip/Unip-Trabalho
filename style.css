@@ -158,7 +158,7 @@ h2{
     text-align: left;
 }
 
-.exemplos section{
+.exemplos section, .aplicacao section{
     width: 36rem;
 }
 
@@ -178,7 +178,7 @@ h2{
     font-weight: 500;
 }
 
-.exemplos img{
+.exemplos img, .aplicacao img{
     border-radius: 7px;
 }
 
@@ -207,4 +207,100 @@ h2{
 
 .exemplos h4{
     margin-bottom: .5rem;
+}
+
+.aplicacao{
+    background: #1E1E1E;
+    color: #FFFAFA;
+    padding-block: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.aplicacao section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+    font-family: "Roboto Slab";
+    margin-top: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: solid 1px #eeeeee;
+    text-align: center;
+    width: 33.33%;
+}
+
+th {
+    color: #1E1E1E;
+    background: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+}
+
+tr{
+    background: #1E1E1E;
+}
+
+input{
+    background: none;
+    border: none;
+    color: #FFFAFA;
+    font-family: "Roboto Slab";
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    width: 7rem;
+
+}
+
+input::placeholder{
+    color: #FFFAFA;
+    font-family: "Roboto Slab";
+}
+
+.aplicacao button{
+    font-family: "Raleway";
+    background: #1E1E1E;
+    border: solid 2px #FFFAFA;
+    border-radius: 20px;
+    font-size: 1.125rem;
+    padding-block: .75rem;
+    padding-inline: 2rem;
+    color: #FFFAFA;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.aplicacao button:hover{
+    filter: invert(1);
+}
+
+.voltar{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #1E1E1E;
+    border-radius: 50%;
+    color: #FFFAFA;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.voltar img{
+    filter: invert(1);
+    width: 1.5rem;
+    height: 1.5rem;
 }

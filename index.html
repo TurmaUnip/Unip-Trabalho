@@ -11,13 +11,13 @@
     <title>Poder do Saber</title>
 </head>
 <body>
-    <header>
+    <header id="cima">
         <nav>
             <a href="#autor">Autor</a>
             <a href="#formula">Fórmula</a>
             <img src="./images/omega.png" alt="Símbolo OHM">
             <a href="#exemplos">Exemplos</a>
-            <a href="">Aplicação</a>
+            <a href="#aplicacao">Aplicação</a>
         </nav>
         <h1>Lei de Ohm: Desvendando os Segredos da Eletricidade</h1>
         <h3>Explore os fundamentos da Lei de Ohm e sua importância crucial nos circuitos elétricos. Você sabe como tensão, corrente e resistência se relacionam?</h3>
@@ -39,21 +39,21 @@
             <h2>A Fórmula Mágica: V = I ⋅ R</h2>
             <section>
                 <div class="items">
-                    <img src="./images/tensao.png" alt="">
+                    <img src="./images/tensao.png" alt="Tensão">
                     <div>
                         <h4>Tensão(V)</h4>
                         <p>Medida em volts, representa a força que impulsiona os elétrons.</p>
                     </div>
                 </div>
                 <div class="items">
-                    <img src="./images/corrente.png" alt="">
+                    <img src="./images/corrente.png" alt="Corrente">
                     <div>
                         <h4>Corrente(I)</h4>
                         <p>Medida em amperes, indica o fluxo de elétrons no circuito.</p>
                     </div>
                 </div>
                 <div class="items">
-                    <img src="./images/resistencia.png" alt="">
+                    <img src="./images/resistencia.png" alt="Resistência">
                     <div>
                         <h4>Resistência(R)</h4>
                         <p>Medida em ohms, é a oposição ao fluxo da corrente.</p>
@@ -71,8 +71,60 @@
                     <div class="exemplo"><h4>Aquecedor</h4> <p>Encontrar a tensão necessária para um aquecedor com resistência de 20Ω e corrente de 10A: <br><span>V = 10A * 20Ω = 200V</span></p></div>
                 </div>
             </section>
-            <img src="./images/Formula.png" alt="">
+            <img src="./images/Formula.png" alt="Lei de Ohm">
+        </div>
+
+        <div class="aplicacao" id="aplicacao">
+            <img src="./images/Pratica.png" alt="Representação da Lei de Ohm">
+            <section>
+                <h2>Visualizando as Relações</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tensão (V)</th>
+                            <th>Corrente (I)</th>
+                            <th>Resistência (R)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12 V</td>
+                            <td>0.5 A</td>
+                            <td>24 Ω</td>
+                        </tr>
+                        <tr>
+                            <td>24 V</td>
+                            <td>1.0 A</td>
+                            <td>24 Ω</td>
+                        </tr>
+                        <tr>
+                            <td>36 V</td>
+                            <td>1.5 A</td>
+                            <td>24 Ω</td>
+                        </tr>
+                        <tr>
+                            <td>5 V</td>
+                            <td>1 A</td>
+                            <td>5 Ω</td>
+                        </tr>
+                        <tr>
+                            <td>10 V</td>
+                            <td>2 A</td>
+                            <td>5 Ω</td>
+                        </tr>
+                        <tr id="interacao">
+                            <td><input type="number" id="tensao" placeholder="Tensão"></td>
+                            <td><input type="number" id="corrente" placeholder="Corrente"></td>
+                            <td><input type="number" id="resistencia" placeholder="Resistência"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="calcular()">Calcular</button>
+            </section>
         </div>
     </main>
+    <a href="#cima" class="voltar"><img src="./images/seta-para-cima.png" alt=""></a>
+    
+    <script src="./script.js" defer></script>
 </body>
 </html>
